@@ -1469,7 +1469,7 @@ footer .goto-top {
   padding: 10px 20px;
 }
 .card .content .title{
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   color:white;
   font-family: 'Press Start 2P', cursive;
@@ -1567,7 +1567,7 @@ footer .goto-top {
 
 @media only screen and (max-width: 736px) {
 h1 {
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.4;
   margin-bottom: 50px;
 }
