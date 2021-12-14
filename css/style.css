@@ -706,9 +706,6 @@ color: #E3FF00
 
 }
 
-div.container.issues-row:hover {
-  background-color: black;
-}
 
 .text-left {
   display: flex;
@@ -716,6 +713,7 @@ div.container.issues-row:hover {
   flex-wrap: wrap;
   height: 300px;
   justify-content: center;
+  width: 30%;
 }
 
 /********Project Sec CSS********/
@@ -797,6 +795,7 @@ div.container.issues-row:hover {
   margin-bottom: 0; }
 
 /********Education Sec CSS********/
+
 .education-wrap .qualfication-wrap {
   margin-top: 42px;
     }
@@ -815,7 +814,6 @@ div.container.issues-row:hover {
     height: 35px;
     width: 35px;
     display: table;
-    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     text-align: center;
     color: #fff;
@@ -1549,7 +1547,7 @@ footer .goto-top {
 
 
 #contact_sec h6 {
-  font-size: 20px;
+  font-size: 16px;
   margin-left: 60px;
 
 }
