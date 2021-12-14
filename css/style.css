@@ -384,8 +384,8 @@ background: rgba(69, 0, 255, 0.85);
   -webkit-transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0s;
   transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0s; }
   .content-block .person-img {
-    height: 260px;
-    width: 260px;
+    height: 220px;
+    width: 220px;
     background: url(../img/candidate.png);
     border-radius: 50%;
     background-repeat: no-repeat;
