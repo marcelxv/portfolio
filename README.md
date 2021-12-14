@@ -1,2 +1,4 @@
-# portfolio-dev-2020
-PORTFOLIO BUILD TO SHOWCASE MY SKILLS AND WORK EXPERIENCE AS FRONT END ENGINEER
+# Marcel Scognamiglio – Front End Engineer
+portfolio build to showcase my skills and work experience as front end engineer
+
+![](https://github.com/marcelxv/portfolio/blob/master/img/cover.png)
