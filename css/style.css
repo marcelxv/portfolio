@@ -1572,3 +1572,15 @@ h1 {
   margin-bottom: 50px;
 }
 }
+
+
+.nav-log {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color:#E3FF00;
+  margin-left: 20px;
+
+
+}
