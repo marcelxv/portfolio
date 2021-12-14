@@ -1,2 +1,2 @@
 # portfolio-dev-2020
- Porfólio feito para demonstrar meus trabalhos em HTML5, CSS, JS e PHP
+PORTFOLIO BUILD TO SHOWCASE MY SKILLS AND WORK EXPERIENCE AS FRONT END ENGINEER

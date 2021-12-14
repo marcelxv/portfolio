@@ -81,15 +81,17 @@ a:focus {
   outline: none; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #fff; }
+  color: #fff; 
+  font-family: 'Press Start 2P', cursive;
+}
 
 h1 {
-  font-size: 45px;
-  line-height: 60px;
+  font-size: 25px;
+  line-height: 40px;
   text-transform: capitalize;
   font-weight: 500;
   letter-spacing: -.5px;
-  margin-bottom: 75px;
+  margin-bottom: 25px;
   color: #fff; }
 
 h3 {
@@ -111,13 +113,15 @@ h6 {
   letter-spacing: 1.5px;
   font-weight: 500;
   text-transform: uppercase;
-  color: #e5cc09;
+  color: #E3FF00
+;
   margin-bottom: 33px; }
 
 p {
-  font-size: 16px;
-  font-family: "Hind", sans-serif;
-  color: #ccc; }
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: white; 
+}
 
 .p-small {
   font-size: 14px;
@@ -185,6 +189,9 @@ p {
 .pad-bottom-80 {
   padding-bottom: 80px; }
 
+  .pad-bottom-10 {
+    padding-bottom: 10px; }
+
 .pad-bottom-35 {
   padding-bottom: 35px; }
 
@@ -197,8 +204,15 @@ p {
 .margin-bottom-xs {
   margin-bottom: 30px; }
 
+.margin-top-100 {
+    margin-top: 100px; 
+  }
+
 .margin-top-150 {
-  margin-top: 150px; }
+  margin-top: 150px; 
+}
+
+
 
 .margin-top-80 {
   margin-top: 80px; }
@@ -363,27 +377,26 @@ p {
 
 /********About Sec CSS********/
 .content-block {
-  background: #13152eee;
+background: rgba(69, 0, 255, 0.85);
   border-top-left-radius: 10px;
   -moz-transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0s;
   -o-transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0s;
   -webkit-transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0s;
   transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0s; }
   .content-block .person-img {
-    height: 150px;
-    width: 150px;
+    height: 260px;
+    width: 260px;
     background: url(../img/candidate.png);
     border-radius: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: .8;
 }
 
 /********Header Sec CSS********/
-.btn {
+.header .btn {
   font-size: 11px;
   font-weight: 500;
-  color: #fff;
+  color: #E3FF00;
   letter-spacing: 1.5px;
   overflow: hidden;
   position: relative;
@@ -400,7 +413,7 @@ p {
   transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0s; }
   .btn .btn-label {
     padding: 4px 0; }
-  .btn:hover, .btn:focus, .btn:active {
+    .header .btn:hover, .btn:focus, .btn:active {
     background: #141414 !important;
     outline: none !important;
     border: none !important;
@@ -410,7 +423,7 @@ p {
     z-index: 2;
     display: inline-block; }
   .btn .mask {
-    background: #e5cc09;
+    background: black;
     border-radius: 2px;
     display: block;
     height: 100%;
@@ -435,6 +448,7 @@ p {
   padding-top: 7px; }
 
 header {
+  font-family: 'Press Start 2P', cursive;
   position: absolute;
   right: 0;
   top: 0;
@@ -460,7 +474,7 @@ header {
     width: 66.66%;
     position: fixed;
     z-index: 99;
-    background: rgba(255, 255, 255, 0.72);
+    background: #E3FF00;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-transition: margin 0.6s ease 0s, transform 0.6s ease 0s;
@@ -473,12 +487,8 @@ header {
       color: #fff;
       background: #141414; }
       header.fixed .btn .mask {
-        background: #e5cc09; }
-      header.fixed .btn:hover, header.fixed .btn:focus, header.fixed .btn:active {
-        background: #141414 !important;
-        outline: none !important;
-        border: none !important;
-        color: #fff !important; }
+        background: #E3FF00
+; }
 
 /********Vertical Nav Sec CSS********/
 nav.navbar.navbar-default.vertical-nav {
@@ -510,10 +520,12 @@ nav.navbar.navbar-default.vertical-nav {
     margin-bottom: 29px;
     width: 50px; }
     nav.navbar.navbar-default.vertical-nav li span {
-      font-size: 11px;
+      font-size: 12px;
       font-weight: 500;
+      font-family: 'Press Start 2P', cursive;
       left: 90px;
-      line-height: 1;
+      line-height: 1.3;
+      width: 200px;
       color: #141414;
       position: absolute;
       opacity: 0;
@@ -551,9 +563,8 @@ nav.navbar.navbar-default.vertical-nav {
         right: 0;
         left: 0; }
       nav.navbar.navbar-default.vertical-nav li a:after {
-        background: #fff none repeat scroll 0 0;
-        border: 3px solid #fff;
-        border-radius: 50%;
+        background: #E3FF00 none repeat scroll 0 0;
+        border: 6px solid #fff;
         height: 0;
         -moz-transition: all 0.1s ease-out 0s;
         -o-transition: all 0.1s ease-out 0s;
@@ -573,13 +584,14 @@ nav.navbar.navbar-default.vertical-nav {
       transition: all 0.5s ease-out 0s; }
     nav.navbar.navbar-default.vertical-nav li.active a:after {
       background: transparent none repeat scroll 0 0;
-      border-width: 2px;
+      border-width: px;
       height: 8px;
       width: 8px; }
     nav.navbar.navbar-default.vertical-nav li.active span {
       left: 50px;
       opacity: 1;
-      color: #fff; }
+      color: #E3FF00;
+    border-color: #E3FF00;  }
     nav.navbar.navbar-default.vertical-nav li:hover span {
       left: 50px;
       opacity: 1;
@@ -592,7 +604,8 @@ a.goto-social, a.goto-social:hover {
 
 .separater-hr {
   margin: 0;
-  border-color: #454648; }
+  border-color: #E3FF00;
+opacity: 0.5; }
 
 /********Services Sec CSS********/
 .services-icon-wrap span {
@@ -600,7 +613,7 @@ a.goto-social, a.goto-social:hover {
   .services-icon-wrap span.key-fact {
     font-size: 14px;
     font-weight: 500;
-    font-family: "Hind", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: #fff;
     letter-spacing: .5px;
     text-transform: uppercase;
@@ -632,7 +645,7 @@ a.goto-social, a.goto-social:hover {
     .skills-wrap .progress-bar-graph .bar-wrap strong {
       font-size: 12px;
       font-weight: 500;
-      font-family: "Hind", sans-serif;
+      font-family: "Open Sans", sans-serif;
       color: #fff;
       opacity: 0;
       display: block;
@@ -641,7 +654,8 @@ a.goto-social, a.goto-social:hover {
       right: 0px;
       top: -27px; }
   .skills-wrap .progress-bar-graph span {
-    background-color: #e5cc09;
+    background-color: #E3FF00
+;
     height: 3px;
     width: 0px;
     display: block;
@@ -649,7 +663,8 @@ a.goto-social, a.goto-social:hover {
     position: relative;
     overflow: visible !important; }
     .skills-wrap .progress-bar-graph span:after {
-      border: 3px solid #e5cc09;
+      border: 3px solid #E3FF00
+;
       border-radius: 50%;
       content: "";
       height: 15px;
@@ -659,14 +674,49 @@ a.goto-social, a.goto-social:hover {
       top: -6px;
       width: 15px; }
   .skills-wrap .progress-cat {
-    font-size: 12px;
-    font-family: "Hind", sans-serif;
-    font-weight: 600;
-    color: #fff;
-    letter-spacing: .5px;
-    text-transform: uppercase;
-    display: block;
-    padding-bottom: 10px; }
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    cursor: pointer; }
+
+    .skills-wrap .progress-cat:hover {
+      color: #E3FF00; }
+
+    #skill_sec > div > div > span > span {
+color: #E3FF00
+
+    }
+
+
+
+    /********ISSUES SEC********/
+.img-issues {
+  width: 100%;
+  height: auto;
+}
+
+
+.issues-row{
+  padding-top: 40px;
+  cursor: pointer;
+  padding: 0 30px;
+  margin-bottom: 30px;
+
+}
+
+div.container.issues-row:hover {
+  background-color: black;
+}
+
+.text-left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 300px;
+  justify-content: center;
+}
 
 /********Project Sec CSS********/
 .project-gallery a {
@@ -748,14 +798,16 @@ a.goto-social, a.goto-social:hover {
 
 /********Education Sec CSS********/
 .education-wrap .qualfication-wrap {
-  margin-top: 42px; }
+  margin-top: 42px;
+    }
   .education-wrap .qualfication-wrap .qualfication:nth-child(even) {
     background: rgba(255, 255, 255, 0.04); }
 .education-wrap .qualfication {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   float: left;
   padding: 30px 0;
-  width: 100%; }
+  width: 100%;
+ }
   .education-wrap .qualfication.first-row {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     border-top: 1px solid rgba(255, 255, 255, 0.1); }
@@ -767,30 +819,33 @@ a.goto-social, a.goto-social:hover {
     border-radius: 50%;
     text-align: center;
     color: #fff;
-    font-family: "Hind", sans-serif;
     font-size: 11px;
     font-weight: 600; }
     .education-wrap .qualfication .row-count span {
       display: table-cell;
-      vertical-align: middle; }
+      vertical-align: middle;
+      font-size: 32px;
+      color: #E3FF00
+     }
   .education-wrap .qualfication .yr-pers {
     color: #fff;
-    font-family: "Hind", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 12px;
     font-weight: 600;
-    letter-spacing: .5px; }
+    letter-spacing: .5px;
+    text-transform:  uppercase; }
   .education-wrap .qualfication .insti {
     color: #fff;
-    font-family: "Hind", sans-serif;
-    font-size: 14px;
+    font-family: "Press Start 2P", cursive;
+    font-size: 12px;
     font-weight: 500;
-    text-transform: capitalize; }
+    text-transform: uppercase; }
   .education-wrap .qualfication .design {
     color: #ccc;
-    font-family: "Hind", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: 500;
-    text-transform: capitalize; }
+    text-transform: uppercase; }
 .education-wrap .vertical-align-pad {
   padding-top: 10px;
   display: block; }
@@ -848,7 +903,8 @@ a.goto-social, a.goto-social:hover {
 .experience-wrap .exp-timeline.timeline-inactive.timeline-active .exp-content-wrap {
   opacity: 1 !important; }
 .experience-wrap .exp-timeline.timeline-active .timeline-st:after {
-  border: 3px solid #e5cc09; }
+  border: 3px solid #E3FF00
+; }
 
 /********Client Sec CSS********/
 .client-wrap .owl-carousel .owl-item img {
@@ -861,7 +917,7 @@ a.goto-social, a.goto-social:hover {
   .achivement-list-wrap li ul li {
     font-size: 14px;
     color: #fff;
-    font-family: "Hind", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 500;
     text-transform: capitalize;
     float: left;
@@ -898,24 +954,24 @@ a.goto-social, a.goto-social:hover {
   .contact-wrap .form-control::-webkit-input-placeholder {
     color: #ccc;
     font-size: 13px;
-    font-family: "Hind", sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-transform: capitalize; }
   .contact-wrap .form-control:-moz-placeholder {
     /* Firefox 18- */
     color: #8d8d8d;
     font-size: 13px;
-    font-family: "Hind", sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-transform: capitalize; }
   .contact-wrap .form-control::-moz-placeholder {
     /* Firefox 19+ */
     color: #8d8d8d;
     font-size: 13px;
-    font-family: "Hind", sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-transform: capitalize; }
   .contact-wrap .form-control:-ms-input-placeholder {
     color: #8d8d8d;
     font-size: 13px;
-    font-family: "Hind", sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-transform: capitalize; }
   .contact-wrap .form-control input:-webkit-autofill, .contact-wrap .form-control textarea:-webkit-autofill, .contact-wrap .form-control select:-webkit-autofill {
     background-color: transparent;
@@ -940,7 +996,8 @@ a.goto-social, a.goto-social:hover {
     background: #fff !important;
     color: #fff !important; }
   .contact-wrap .btn .mask {
-    background-color: #e5cc09; }
+    background-color: #E3FF00
+; }
 .contact-wrap .email-direct {
   font-size: 14px;
   margin-top: 60px; }
@@ -952,7 +1009,8 @@ a.goto-social, a.goto-social:hover {
 .contact-wrap .bg-success, .contact-wrap .bg-danger {
   background: none; }
 .contact-wrap .bg-success {
-  color: #e5cc09; }
+  color: #E3FF00
+; }
 
 /********Footer Sec CSS********/
 @-webkit-keyframes blinking {
@@ -996,9 +1054,11 @@ footer .available-wrap {
     letter-spacing: -0.5;
     color: #fff;
     display: block;
-    float: left; }
+    float: left;
+    font-family: 'Press Start 2P', cursive; }
   footer .available-wrap .available-pointer {
-    background: #e5cc09 none repeat scroll 0 0;
+    background: #E3FF00
+ none repeat scroll 0 0;
     position: relative;
     display: inline-block;
     float: left;
@@ -1007,7 +1067,6 @@ footer .available-wrap {
     margin-left: 8px;
     margin-right: 32px;
     margin-top: 7px;
-    border-radius: 50%;
     float: left;
     -webkit-animation-name: flash;
     animation-name: flash;
@@ -1017,7 +1076,8 @@ footer .available-wrap {
     animation-iteration-count: infinite;
     content: ' '; }
     footer .available-wrap .available-pointer:before {
-      background-color: #e5cc09;
+      background-color: #E3FF00
+;
       content: ' ';
       position: absolute;
       top: -8px;
@@ -1079,7 +1139,7 @@ footer .goto-top {
   footer .goto-top a {
     color: #fff;
     font-size: 11px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Press Start 2P", sans-serif;
     display: inline-block;
     overflow: hidden;
     text-transform: uppercase;
@@ -1159,9 +1219,11 @@ footer .goto-top {
     -webkit-transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0s;
     transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0s; }
   nav.navbar.navbar-default li a:hover span {
-    color: #e5cc09; }
+    color: #E3FF00
+; }
   nav.navbar.navbar-default li.active a span {
-    color: #e5cc09; }
+    color: #E3FF00
+; }
   nav.navbar.navbar-default li:hover, nav.navbar.navbar-default li:active, nav.navbar.navbar-default li:focus {
     background: none; }
 
@@ -1208,7 +1270,8 @@ footer .goto-top {
     -moz-transition: margin 0.6s ease 0s, transform 0.6s ease 0s;
     -o-transition: margin 0.6s ease 0s, transform 0.6s ease 0s;
     -webkit-transition: margin 0.6s ease 0s, transform 0.6s ease 0s;
-    transition: margin 0.6s ease 0s, transform 0.6s ease 0s; }
+    transition: margin 0.6s ease 0s, transform 0.6s ease 0s; 
+  }
     header.fixed {
       width: 100%;
       top: 0; }
@@ -1227,7 +1290,8 @@ footer .goto-top {
           background: #141414 !important;
           outline: none !important;
           border: none !important;
-          color: #fff !important; }
+          color: #fff !important; 
+        }
         header .header-wrap .btn:hover .pe-7s-download, header .header-wrap .btn:hover .pe-7s-menu {
           color: #141414 !important; }
       header .header-wrap b {
@@ -1240,7 +1304,7 @@ footer .goto-top {
       color: #fff;
       background: #fff; }
       header .btn .mask {
-        background: #e5cc09; }
+      background: #E3FF00; }
       header .btn:hover {
         color: #141414;
         background: #fff; }
@@ -1316,7 +1380,8 @@ footer .goto-top {
   .education-wrap .qualfication .row-count {
     margin-bottom: 15px; }
   .education-wrap .qualfication .yr-pers {
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+   }
 
   .experience-wrap .duration {
     padding-bottom: 15px; } }
@@ -1377,3 +1442,133 @@ footer .goto-top {
     margin-right: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
+
+.owl-carousel .owl-stage-outer {
+  overflow: visible;
+  margin-left: -20px;
+}
+.slider{
+  max-width: 100%;
+  display: flex;
+}
+.slider .card{
+  flex: 7;
+  margin: 0 8px;
+  background: #4500FF;;
+}
+.slider .card .img{
+  height: 200px;
+  width: 100%;
+}
+.slider .card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider .card .content{
+  padding: 10px 20px;
+}
+.card .content .title{
+  font-size: 18px;
+  font-weight: 600;
+  color:white;
+  font-family: 'Press Start 2P', cursive;
+}
+.card .content .sub-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  line-height: 20px;
+}
+.card .content p{
+  text-align: left;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.card .content .btn{
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+.card .content .btn button{
+  background: white;
+  color: #4500FF;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  padding: 5px 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: 'Press Start 2P', cursive;
+
+}
+.card .content .btn button:hover{
+  transform: scale(0.9);
+}
+
+
+.glitch {
+  color: #E3FF00;
+}
+.glitch:hover {
+  -webkit-animation: pulse 1s ease-in infinite;
+          animation: pulse 1s ease-in infinite;
+  background: radial-gradient(circle, rgba(69, 0, 255, 0.85) 43%, transparent 50%) 0 0/1em 1em, radial-gradient(circle, rgba(227, 255, 0, 0.5) 43%, transparent 20%) 0.2em 0.2em/15em 14em;
+  color: white;
+}
+
+@-webkit-keyframes pulse {
+  50% {
+    background-position: 0.66em 0.66em, -0.33em -0.33em;
+  }
+  100% {
+    background-size: 2em 2em, 1em 1em;
+    background-position: -1.5em -1.5em, -1em -1em;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    background-position: 0.66em 0.66em, -0.33em -0.33em;
+  }
+  100% {
+    background-size: 2em 2em, 1em 1em;
+    background-position: -1.5em -1.5em, -1em -1em;
+  }
+}
+
+
+
+#contact_sec i {
+  font-size: 30px;
+  position: absolute;
+  left: 30;
+  color: white;
+
+}
+
+
+#contact_sec h6 {
+  font-size: 20px;
+  margin-left: 60px;
+
+}
+
+
+#contact_sec h3 {
+  margin-bottom: 130px;
+
+}
+
+#contact_sec h6:hover {
+ color: white;
+
+}
+
+@media only screen and (max-width: 736px) {
+h1 {
+  font-size: 26px;
+  line-height: 1.4;
+  margin-bottom: 50px;
+}
+}
