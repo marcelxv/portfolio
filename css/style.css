@@ -1500,6 +1500,31 @@ footer .goto-top {
   font-family: 'Press Start 2P', cursive;
 
 }
+
+#morep {
+  background: white;
+  color: #4500FF;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  padding: 5px 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: 'Press Start 2P', cursive;
+  margin-bottom: 30px;
+
+}
+
+#morep:hover {
+  background: #4500FF;
+  color: white;
+}
+
+
+.more {
+  display: flex;
+  justify-content: center;
+}
 .card .content .btn button:hover{
   transform: scale(0.9);
 }
@@ -1581,4 +1606,32 @@ h1 {
   margin-left: 20px;
 
 
+}
+
+#work_sec #tip {
+  font-size: 12px;
+  font-family: 'Press Start 2P', cursive;
+  color: #E3FF00;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+
+}
+
+.card:hover {
+  animation: shake 4s cubic-bezier(.36,.07,.19,.97) both;
+  /* box-shadow: #E3FF00 0px 30px 30px; */
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
