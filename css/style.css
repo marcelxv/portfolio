@@ -377,7 +377,7 @@ p {
 
 /********About Sec CSS********/
 .content-block {
-background: rgba(69, 0, 255, 0.85);
+background: rgba(0, 0, 0, 0.5);
   border-top-left-radius: 10px;
   -moz-transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0s;
   -o-transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0s;
@@ -1634,4 +1634,9 @@ h1 {
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.emoji {
+  font-size: 50px;
+  margin-right: 10px;
 }
