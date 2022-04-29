@@ -88,7 +88,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 25px;
   line-height: 40px;
-  text-transform: capitalize;
   font-weight: 500;
   letter-spacing: -.5px;
   margin-bottom: 25px;
@@ -377,7 +376,7 @@ p {
 
 /********About Sec CSS********/
 .content-block {
-background: rgba(0, 0, 0, 0.5);
+background: rgba(0, 0, 0, 0.8);
   border-top-left-radius: 10px;
   -moz-transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0s;
   -o-transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0s;
